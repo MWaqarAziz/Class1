@@ -29,4 +29,6 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Setup Surge
         run: npm install --global surge
+      - name: Execute Deployment with Surge
+        run: surge ./ grouchy-class1.surge.sh --token ${{secrets.SURGE_TOKEN}}
         
